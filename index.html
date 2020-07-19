@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Веб студия</title>
-    <link rel="stylesheet" href="./css/styles-index.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Веб студия</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./css/styles-index.css">
     </head>
 <body>
     <!--шапка-->
     <header>
         <nav>
-            <a href="./index.html">
-                <img src="./image/Web-Studio.svg" alt="логотип">
+            <a class="logo" href="./index.html"> 
+                <span class="logo-web" lang="en">Web</span> Studio
             </a>
-            <ul class="site-nav list">
-                <li><a href="/">Студия</a></li>
-                <li><a href="/portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+            <ul class="site-nav">
+                <li><a class="site-nav-link current" href="./index.html">Студия</a></li>
+                <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="site-nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
-            <ul>
-                <li><img src="./image/envelope(hover).svg" alt="конверт">
+            <ul class="contacts">
+                <li class="contacts-list"><img src="./image/envelope(hover).svg" alt="конверт">
                     <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><img src="./image/smartphone.svg" alt="смартфон">
+                <li class="contacts-list"><img src="./image/smartphone.svg" alt="смартфон">
                     <a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
     </header>
     <!--главный контент-->
     <main>
         <section>
-            <h1>Эффективные решения<br>для вашего бизнеса</h1>
-            <a href="">Заказать услугу</a>       
+            <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
+            <a class="button" href="">Заказать услугу</a>       
         </section>
         <!--секция 1 - наши особенности-->
-        <section>
-            <h2>Особенности</h2>
+        <section class="features">
+            <h2 class="features-title">Особенности</h2>
             <ul>
                 <li><img src="./image/antenna1.svg" alt="антена"></li>
-                <li><h3>Внимание к деталям</h3></li>
-                <li><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+                <li><h3 class="title">Внимание к деталям</h3></li>
+                <li><p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
             </ul>
             <ul>
                 <li><img src="./image/clock1.svg" alt="часы"></li>
-                <li><h3>Пунктуальность</h3></li>
-                <li><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+                <li><h3 class="title">Пунктуальность</h3></li>
+                <li><p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
             </ul>
             <ul>
                 <li><img src="./image/diagram1.svg" alt="диаграмма"></li>
-                <li><h3>Планирование</h3></li>
-                <li><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+                <li><h3 class="title">Планирование</h3></li>
+                <li><p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
             </ul>
             <ul>
                 <li><img src="./image/astronaut1.svg" alt="астронавт"></li>
-                <li><h3>Современные технологии</h3></li>
-                <li><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+                <li><h3 class="title">Современные технологии</h3></li>
+                <li><p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
             </ul>
         </section>
         <!--секция 2 - чем мы занимаемся-->
         <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
+            <h2 class="work-title">Чем мы занимаемся</h2>
+            <ul class="work-list">
                 <li>
                     <img src="./image/nout.jpg" alt="ноутбук">
                     <a href="">Десктопные приложения</a>
@@ -76,12 +77,12 @@
         </section>
         <!--секция 3 - наша команда-->
         <section>
-            <h2>Наша команда</h2>
-            <ul>
+            <h2 class="team-title">Наша команда</h2>
+            <ul class="team-list">
                 <li>
                     <img src="./image/nikolay.jpg" width="270" alt="Николай Кучеренко">
-                    <h3>Николай Кучеренко</h3>
-                    <p lang="en">Product Designer</p>
+                    <h3 class="name">Николай Кучеренко</h3>
+                    <p class="position" lang="en">Product Designer</p>
                     <a href="">
                         <img src="./image/instagram2.svg" alt="логотип инстаграм">
                     </a>
@@ -97,8 +98,8 @@
                 </li>
                 <li>
                     <img src="./image/olga.jpg" width="270" alt="Ольга Иванова">
-                    <h3>Ольга Иванова</h3>
-                    <p lang="en">Frontend Developer</p>
+                    <h3 class="name">Ольга Иванова</h3>
+                    <p class="position" lang="en">Frontend Developer</p>
                     <a href="">
                         <img src="./image/instagram2.svg" alt="логотип инстаграм">
                     </a>
@@ -113,8 +114,8 @@
                     </a>
                 </li><li>
                     <img src="./image/andrey.jpg" width="270" alt="Андрей Шевченко">
-                    <h3>Андрей Шевченко</h3>
-                    <p lang="en">Marketing</p>
+                    <h3 class="name">Андрей Шевченко</h3>
+                    <p class="position" lang="en">Marketing</p>
                     <a href="">
                         <img src="./image/instagram2.svg" alt="логотип инстаграм">
                     </a>
@@ -129,8 +130,8 @@
                     </a>
                 </li><li>
                     <img src="./image/ivan.jpg" width="270" alt="Иван Николаев">
-                    <h3>Иван Николаев</h3>
-                    <p lang="en">UI Designer</p>
+                    <h3 class="name">Иван Николаев</h3>
+                    <p class="position" lang="en">UI Designer</p>
                     <a href="">
                         <img src="./image/instagram2.svg" alt="логотип инстаграм">
                     </a>
@@ -148,8 +149,8 @@
         </section>
         <!--секция 4 - постоянные клиенты-->
         <section>
-            <h2>Постоянные клиенты</h2>
-            <ul>
+            <h2 class="clients-title">Постоянные клиенты</h2>
+            <ul class="client-list">
                 <li>
                     <a href="">
                         <img src="./image/logo1.svg" alt="логотип клиента 1">
@@ -186,18 +187,18 @@
     </main>
     <!--подвал--> 
     <footer>
-            <a href="./index.html">
-                <img src="./image/Web-Studio.svg" alt="логотип">
-            </a>
-            <address>
-                <b>г. Киев, пр-т Леси Украинки, 26 </b>
+        <a class="logo" href="./index.html"> 
+            <span class="logo-web" lang="en">Web</span> Studio
+        </a>
+            <address class="address">
+                г. Киев, пр-т Леси Украинки, 26
                 <br>
                 <a href="mailto:info@example.com">info@example.com</a>
                 <br>
                 <a href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
-            <h3>присоединяйтесь</h3>
-            <ul>                
+            <h3 class="network-title">присоединяйтесь</h3>
+            <ul class="network-links">                
                 <li>
                     <a href="">
                         <img src="./image/instagram2.svg" alt="логотип инстаграм">
