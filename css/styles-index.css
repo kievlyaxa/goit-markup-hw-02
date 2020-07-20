@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
+    --white-text-color: #ffffff;
     --accent-color: #2196F3;
     --logo-color: #000000;
     --background-color: #ffffff;
@@ -106,7 +107,11 @@ body {
 
 /* наши особенности */
 .features li {
-    list-style: none;
+    list-style: none; 
+}
+
+.features-title {
+    visibility: hidden;
 }
 
 .features .title {
@@ -217,9 +222,64 @@ color: var(--primary-text-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: var(--white-text-color);
+    background-color: var(--primary-text-color);
 }
 
 .network-links {
     list-style: none;
+}
+
+/* главный контент портфолио */
+
+.filter {
+    visibility: hidden;
+}
+
+.filter-button {
+    list-style: none;
+}
+
+.filter-button button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    background-color: transparent;
+}
+
+/* список проектов */
+
+.projects {
+    list-style: none;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+}
+
+.projects .description {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.projects .details {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    /* цвет фона удалить после позиционирования */
+    background-color: var(--primary-text-color);
 }
